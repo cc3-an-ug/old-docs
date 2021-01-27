@@ -50,5 +50,6 @@ extra:
 # TOC
 nav:
   - Inicio: index.md
-  - Laboratorios: index.md
+  - Laboratorios:
+      - '00: Git': labs/lab00.md
   - Proyectos: index.md
