@@ -52,6 +52,7 @@ nav:
   - Inicio: index.md
   - Laboratorios:
       - '00: Git': labs/lab00.md
+      - '01: C y GDB': labs/lab01.md
   - Proyectos: index.md
   - Tutoriales:
       - 'Instalación VM': tutorials/install.md

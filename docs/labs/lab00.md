@@ -82,7 +82,7 @@ git status
 Lo que producirá lo siguiente:
 
 ```shell
-On branch master
+On branch main
 
 No commits yet
 
@@ -99,15 +99,15 @@ Esto es porque hemos creado un archivo nuevo llamado `hello.sh` y no lo hemos ag
 ```shell
 git add hello.sh # agrega el archivo hello.sh para hacer commit
 git commit -m "Mensaje del Commit" # ingresa cualquier mensaje que quieras
-git branch # deberias de ver que solo existe el branch master y que estas en ella (*)
-git push -u origin master # Esto hace push de tu codigo hacia GitHub (lo puedes ver en GitHub ahora)
+git branch # deberias de ver que solo existe el branch main y que estas en ella (*)
+git push -u origin main # Esto hace push de tu codigo hacia GitHub (lo puedes ver en GitHub ahora)
 ```
 
 El control de versiones git esta construido alrededor de _commits_, o _checkpoints_ en el desarrollo de diferentes versiones/etapas de su código. Para explicar los pasos de arriba un poco más:
 
 - **git add [archivo]** le dirá a git que han hecho cambios a ese archivo y que quieren que esos cambios se guarden en el siguiente commit (staging).
 - **git commit -m "mensaje"** oficialmente guarda esos cambios que acaban de agregar, y crea un _snapshot_ del contenido actual de todos los archivos en el repositorio. Ahora siempre van a tener la opción de revertir su código hacia este commit.
-- **git push -u origin master** manda todo el contenido del repositorio que está en el branch "master" al repositorio remoto "origin" (recuerden que agregamos el repositorio de GitHub "lab0_git" como remote y lo llamamos "origin").
+- **git push -u origin main** manda todo el contenido del repositorio que está en el branch "main" al repositorio remoto "origin" (recuerden que agregamos el repositorio de GitHub "lab0_git" como remote y lo llamamos "origin").
 
 Cuando estamos trabajando con git, si alguna vez no están seguros de algo, pero quieren asegurarse de que tienen una copia guardada del contenido actual de su código, solo tienen que correr `git add .` y después `git commit` en la terminal.
 
@@ -155,7 +155,7 @@ Si ya contestaron todo y creen que está correcto pueden agregar los cambios, ha
 ```shell
 git add ex4.txt
 git commit -m "ex. 3 complete"
-git push -u origin master
+git push -u origin main
 ```
 
 ## Ejercicio 4: 1,000 billetes de $1
@@ -174,7 +174,7 @@ Si ya contestaron todo y creen que está correcto pueden agregar los cambios, ha
 ```shell
 git add ex4.txt
 git commit -m "ex. 4 complete"
-git push -u origin master
+git push -u origin main
 ```
 
 ## Entrega y calificación
