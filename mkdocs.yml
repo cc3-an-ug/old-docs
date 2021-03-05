@@ -51,8 +51,10 @@ extra:
 nav:
   - Inicio: index.md
   - Laboratorios:
-      - '00: Git': labs/lab00.md
-      - '01: C y GDB': labs/lab01.md
+      - "00: Git": labs/lab00.md
+      - "01: C y GDB": labs/lab01.md
+      - "02: C Avanzado": labs/lab02.md
+      - "03: Intro RISC-V": labs/lab03.md
   - Proyectos: index.md
   - Tutoriales:
-      - 'Instalación VM': tutorials/install.md
+      - "Instalación VM": tutorials/install.md
