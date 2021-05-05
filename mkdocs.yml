@@ -62,6 +62,7 @@ nav:
       - "02: C Avanzado": labs/lab02.md
       - "03: Intro RISC-V": labs/lab03.md
       - "04: RISC-V": labs/lab04.md
+      - "05: Logisim (ALU)": labs/lab05.md
   - Proyectos:
       - "01: C y RISC-V": projects/pj01.md
   - Tutoriales:
