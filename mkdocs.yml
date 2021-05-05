@@ -65,5 +65,6 @@ nav:
       - "05: Logisim (ALU)": labs/lab05.md
   - Proyectos:
       - "01: C y RISC-V": projects/pj01.md
+      - "02: Logisim CPU": projects/pj02.md
   - Tutoriales:
       - "Instalación VM": tutorials/install.md
