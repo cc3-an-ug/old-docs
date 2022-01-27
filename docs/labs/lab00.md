@@ -27,12 +27,12 @@ Naveguen a la siguiente página: [github.com](https://github.com/). Si no tienen
 
 ### Preparación
 
-Visiten este [link](https://classroom.github.com/a/1Ix7PBBh). Aquí encontrarán todos los archivos necesarios para completar este laboratorio. En esta página, encontrarán un botón que dice "Accept this assignment". Al presionar este botón, se creará automáticamente un repositorio en Github llamado `https://www.github.com/cc3-an/2021-lab00-git-<USUARIO>`. Noten que el "dueño" de este repositorio es un usuario llamado `cc3-an`, y el usuario de ustedes es únicamente el sufijo del nombre del repo. De esta forma, nos encargamos de tener acceso siempre a su código, en caso existan copias o cualquier otro tipo de trampa. Sepan de una vez que, si encontramos plagio en sus laboratorios, su nota será AUTOMÁTICAMENTE 0, sin posibilidad de cambiarla. De repetirse nuevamente este acontecimiento, el staff del curso organizará una reunión con ustedes y sus directores de carrera para contarles lo ocurrido y sancionarlos conforme al reglamento de la universidad.
+Visiten este [link](https://classroom.github.com/a/1Ix7PBBh). Aquí encontrarán todos los archivos necesarios para completar este laboratorio. En esta página, encontrarán un botón que dice "Accept this assignment". Al presionar este botón, se creará automáticamente un repositorio en Github llamado `https://www.github.com/cc3-an/2022-lab00-git-<USUARIO>`. Noten que el "dueño" de este repositorio es un usuario llamado `cc3-an`, y el usuario de ustedes es únicamente el sufijo del nombre del repo. De esta forma, nos encargamos de tener acceso siempre a su código, en caso existan copias o cualquier otro tipo de trampa. Sepan de una vez que, si encontramos plagio en sus laboratorios, su nota será AUTOMÁTICAMENTE 0, sin posibilidad de cambiarla. De repetirse nuevamente este acontecimiento, el staff del curso organizará una reunión con ustedes y sus directores de carrera para contarles lo ocurrido y sancionarlos conforme al reglamento de la universidad.
 
 Después de realizar esto, en la máquina virtual (o sus propias computadoras) abran una terminal en el directorio que prefieran, y ejecuten el siguiente comando:
 
 ```sh
-git clone https://github.com/cc3-an/2021-lab00-git-<SU USUARIO DE GITHUB>
+git clone https://github.com/cc3-an/2022-lab00-git-<SU USUARIO DE GITHUB>
 ```
 
 esto descargará en el directorio que escogieron todos los archivos base para este laboratorio.
@@ -112,75 +112,3 @@ El control de versiones git esta construido alrededor de _commits_, o _checkpoin
 Cuando estamos trabajando con git, si alguna vez no están seguros de algo, pero quieren asegurarse de que tienen una copia guardada del contenido actual de su código, solo tienen que correr `git add .` y después `git commit` en la terminal.
 
 Un último comando de git que pueden encontrar bastante util es `git log`. Pueden ejectuar este comando en la terminal y van a ver un historial o log de todos los commits que se han hecho (en el branch actual), incluyendo el tiempo y quien hizo el commit.
-
-## Ejercicio 3: Alfabeto Binario
-
-Vamos a utilizar números de 4 bits. Si apilamos cinco números de 4 bits uno encima de otro en binario, podemos crear patrones e imágenes. Para ayudarlos a visualizar esto, pueden pensar que un bit en cero es blanco y un bit en uno es negro. Por ejemplo miren el siguiente patrón de bits.
-
-<p align="center"><img src="/assets/img/labs/lab00/ex3.png" alt="Patron de Bits"/></p>
-
-### Preguntas
-
-1. ¿Cuáles son los cinco números en decimal (separados por una coma) que producen el patrón de arriba?
-2. ¿Cuáles son los cinco digitos en hexadecimal (separados por una coma) que producen el patrón de arriba?
-3. ¿Qué letra se dibuja con los siguientes números en decimal: 1,1,9,9,6?
-4. ¿Qué letra se dibuja con el siguiente numero en hexadecimal: 0xF8F88?
-5. ¿Cuál es el numero en hexadecimal para dibujar la letra b (minúscula)?
-6. ¿Utilizarías cinco dígitos hexadecimales para dibujar la letra N? Contesten Si o No
-
-En los archivos del laboratorio van a encontrar un archivo de texto `ex3.txt` con lo siguiente:
-
-```
-1:
-2:
-3:
-4:
-5:
-6:
-```
-
-En este archivo tienen que colocar todas sus respuestas de las preguntas de arriba siguiendo ese formato por ejemplo un archivo valido sería:
-
-```
-1:1,2,3,4,5
-2:0x1,0x2,0x3,0x4,0x5
-3:A
-4:A
-5:0xcafee
-6:Si/No
-```
-
-Si ya contestaron todo y creen que está correcto pueden agregar los cambios, hacer commit y subirlo al repositorio remoto ejecutando los siguientes comandos en la terminal:
-
-```shell
-git add ex4.txt
-git commit -m "ex. 3 complete"
-git push -u origin main
-```
-
-## Ejercicio 4: 1,000 billetes de $1
-
-Imaginen que tienen mil billetes de \$1 y 10 sobres. Para este ejercicio tienen que encontrar una manera de poner una cantidad determinada de billetes de \$1 en cada uno de los sobres de tal forma que, sin importar la cantidad de dinero que se les pida (entre \$1 y \$1000), simplemente entreguen una combinación de los sobres y que siempre estén seguros de que están dando la cantidad correcta.
-En los archivos del laboratorio hay un archivo de texto llamado `ex4.txt` en donde encontrarán lo siguiente:
-
-```text
-a,b,c,d,e,f,g,h,i,j
-```
-
-Cada una de las letras representa un sobre, tienen que reemplazar cada letra por la cantidad de billetes de \$1 que crean correcta, esa cantidad tiene que ser `>= 0` (en decimal) y recuerda que la suma de la cantidad de cada uno de los sobres tiene que ser igual a `1000`.
-
-Si ya contestaron todo y creen que está correcto pueden agregar los cambios, hacer commit y subirlo al repositorio remoto ejecutando los siguientes comandos en la terminal:
-
-```shell
-git add ex4.txt
-git commit -m "ex. 4 complete"
-git push -u origin main
-```
-
-## Entrega y calificación
-
-A partir del siguiente lab tendremos autograder y podran conocer su nota inmediatamente. Listo, terminaron su primer laboratorio. No olviden que tienen que subir **SIEMPRE** la URL del repositorio en la asignación del GES. La URL se tiene que ver algo como lo siguiente:
-
-```
-https://www.github.com/cc3-an/2021-lab00-git-<USUARIO>
-```

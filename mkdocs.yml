@@ -3,7 +3,7 @@ site_name: Estructura de Máquinas
 site_description: Grandes Ideas en Arquitectura de Computadoras
 site_author: CC-3
 site_url: https://cc3-an.github.io/
-copyright: Copyright &copy; 2021 CC3 AN
+copyright: Copyright &copy; 2022 CC3 AN
 
 # Repository
 edit_uri: edit/main/docs
@@ -12,13 +12,15 @@ repo_url: https://github.com/cc3-an/docs
 
 # Theme Configuration
 theme:
+  favicon: assets/img/favicon.ico
+  logo: assets/img/logo.jpg
   name: material
   language: es
   icon:
     repo: fontawesome/brands/github
   palette:
     primary: grey
-    accent: blue
+    accent: indigo
   features:
     - navigation.tabs
     - search.highlight
@@ -58,13 +60,3 @@ nav:
   - Inicio: index.md
   - Laboratorios:
       - "00: Git": labs/lab00.md
-      - "01: C y GDB": labs/lab01.md
-      - "02: C Avanzado": labs/lab02.md
-      - "03: Intro RISC-V": labs/lab03.md
-      - "04: RISC-V": labs/lab04.md
-      - "05: Logisim (ALU)": labs/lab05.md
-  - Proyectos:
-      - "01: C y RISC-V": projects/pj01.md
-      - "02: Logisim CPU": projects/pj02.md
-  - Tutoriales:
-      - "Instalación VM": tutorials/install.md
