@@ -6,13 +6,7 @@ El objetivo de este tutorial es dejar preparado el material que necesitarán par
 
 Descarguen la siguiente máquina virtual y ábranla con VMware. Recuerde que usando [VMware Player](https://www.vmware.com/products/workstation-player.html) (gratuito, sin necesidad de licencia) puede abrir y utilizar máquinas virtuales ya hechas.
 
-Todos los links son para la misma máquina virtual. Si alguno falla, utilicen otro.
-
 [Descargar máquina virtual desde Google Drive](https://drive.google.com/file/d/1r9uVabP9MC7fflk8q76j2ThJIw2U7ZhX/view?usp=sharing)
-
-[Descargar máquina virtual desde Google Drive (mirror)](https://drive.google.com/file/d/1UhGyJrCBoNjl6ZNc26Z7yLamDiz6R5iS/view?usp=sharing)
-
-[Descargar máquina virtual desde Mega](https://mega.nz/file/CVB1ASoI#yUaFwrdiaJnBl14f1gIHPpakHlxzhpL-Fi2Z4QSuUa0)
 
 ### Credenciales
 

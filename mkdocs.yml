@@ -60,3 +60,5 @@ nav:
   - Inicio: index.md
   - Laboratorios:
       - "00: Git": labs/lab00.md
+  - Material:
+      - "Máquina Virtual": tutorials/install.md
