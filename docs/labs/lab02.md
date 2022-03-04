@@ -140,27 +140,3 @@ Es momento de revisar el código de _ex3/vector.c_ si no lo han hecho. Aquí hay
 - Corrijan a _vector_set()_. Esta es la más complicada. Bienvenidos a las ligas mayores. El problema de manipular una posición/índice arbitrario en un vector _v_ es que es posible que no se haya reservado suficiente espacio con _malloc_ en _vector->data_ (sí, eso significa que tuvieron que haber guardado memoria con _malloc_). Piensen cómo administrar la memoria para lograr esto, para ver qué hacer con la data que estaba ahí antes y de qué otras cosas deben de hacer en su nuevo bloque de datos. Ayuda: Recuerden que los índices que no hayan sido alterados deben de ser cero. Hay distintas formas de acabar resolviendo esta función. Consideren el uso de las 3 funciones _\_\_alloc_, porque pueden resultar útiles...
 
 Saber cómo reorganizar y liberar memoria es importante para la programación en C. Piensen que el manejo de memoria es como un parqueo, si hay carros parqueados y los dueños nunca se van, entonces no tienen espacio para nuevos carros. **Y recuerden que deberían tener un 'heap' vacío al terminar su programa. Utilicen free y todo estará bien.**
-
-## Calificación
-
-Por favor actualizar siempre la versión del CLI de autograders:
-
-```
-pip3 install --upgrade autograders-cli
-```
-
-Como en todos los demás laboratorios, hay un autograder y este no es la excepción. El **staff** trabajo bastante para que su experiencia en este curso sea de las mejores. Entregaremos este lab de la misma manera que el pasado.
-
-Navegue hacia la carpeta donde tiene sus archivos, haga un ls y asegurese que le aparece el archivo autograders.json; si aparecio, esta en el lugar correcto. Ahora puede entregar su laboratorio con...
-
-```
-autograder --upload
-```
-
-Espera un minuto aprox. y luego puede ver sus resultados con...
-
-```
-autograder --stats
-```
-
-Si le aparece Queued: True, espere un par de minutos y luego repita el `autograder --stats` únicamente. Al terminar todo, suba el link de su repositorio al GES.

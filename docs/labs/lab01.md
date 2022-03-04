@@ -10,15 +10,15 @@
 
 ## Preparación
 
-Visiten este [link](https://classroom.github.com/a/Hp7ReI2W). Aquí encontrarán todos los archivos necesarios para completar este lab. En esta página, encontrarán un botón que dice "Accept assignment". Al presionar este botón, se creará automáticamente un repositorio en Github llamado `www.github.com/cc3-an/lab01-2021-USUARIO`. Noten que el "dueño" de este repositorio es un usuario llamado `cc3-an`, y el usuario de ustedes es únicamente el sufijo del nombre del repo. De esta forma, nos encargamos de tener acceso siempre a su código, en caso existan copias o cualquier otro tipo de trampa. Sepan de una vez que, si encontramos plagio o cualquier otro tipo de trampa en sus laboratorios, su nota será AUTOMÁTICAMENTE 0, sin posibilidad de cambiarla. De repetirse nuevamente este acontecimiento, el staff del curso organizará una reunión con ustedes y sus directores de carrera para contarles lo ocurrido y sancionarlos conforme al reglamento de la universidad.
+Visiten este [link](https://classroom.github.com/a/Hp7ReI2W). Aquí encontrarán todos los archivos necesarios para completar este lab. En esta página, encontrarán un botón que dice "Accept assignment". Al presionar este botón, se creará automáticamente un repositorio en Github llamado `www.github.com/cc3-an/2022-lab-01-c-gdb-USUARIO`. Noten que el "dueño" de este repositorio es un usuario llamado `cc3-an`, y el usuario de ustedes es únicamente el sufijo del nombre del repo. De esta forma, nos encargamos de tener acceso siempre a su código, en caso existan copias o cualquier otro tipo de trampa. Sepan de una vez que, si encontramos plagio o cualquier otro tipo de trampa en sus laboratorios, su nota será AUTOMÁTICAMENTE 0, sin posibilidad de cambiarla. De repetirse nuevamente este acontecimiento, el staff del curso organizará una reunión con ustedes y sus directores de carrera para contarles lo ocurrido y sancionarlos conforme al reglamento de la universidad.
 
 Después de realizar esto, en la máquina virtual (o sus propias computadoras) abran una terminal en el directorio que prefieran, y ejecuten el siguiente comando:
 
 ```shell
-git clone https://github.com/cc3-an/lab1-2021-<SU USUARIO DE GITHUB>
+git clone https://github.com/cc3-an/2022-lab-01-c-gdb-<USUARIO DE GITHUB AQUI>
 ```
 
-Esto descargará en el directorio que escogieron todos los archivos base para este laboratorio. Para futuro, un `clone` solo lo hacemos la primera vez que vamos a bajar el codigo de un repositorio a nuestra maquina. Nunca bajen el zip que Github les ofrece, por favor, eso solo nos va a causar problemas.
+Esto descargará en el directorio que escogieron todos los archivos base para este laboratorio. Un `clone` solo lo hacemos la primera vez que vamos a bajar el codigo de un repositorio a nuestra maquina. Nunca bajen el zip que Github les ofrece, por favor, eso solo nos va a causar problemas.
 
 ## Compilando y ejecutando un programa de C
 
@@ -316,68 +316,55 @@ Para finalizar, la fábula de [la tortuga y la liebre](http://read.gov/aesop/025
 
 ## Entrega de laboratorio
 
-A partir de este laboratorio contaremos con autograders, por lo que podrá conocer su nota de inmediato.
+A partir de este laboratorio contaremos con autograders, por lo que podrán conocer su nota de inmediato. Para poder utilizarlo debemos realizar una pequena instalación. [Guía de Instalación de Autograders](/tutorials/autograders).
 
-Para poder utilizarlo debemos realizar una pequena instalación (todos, incluyendo a quienes bajaron nuestra máquina virtual, los autograders están recién salidos del horno).
-
-Para instalar necesitamos tener Python 3.6 o superior, nuestra máquina virtual ya lo cumple. Comenzamos con...
+Una vez esté instalado ustedes deberán iniciar sesión en la carpeta raiz del repositorio.
 
 ```sh
-pip3 install autograders-cli
+autograders --sign-in
 ```
 
-Esto instala el modulo a traves del cual entregará su asignación. Luego tenemos que registrarnos. Por favor sea **MUY CUIDADOSO** al ingresar sus datos. Como es usual en Linux no se vera su contrasena mientras la escribe, de momento **NO EXISTE RECUPERACION DE CONTRASENA** por si se equivoca o se le olvida. **SEA MUY CUIDADOSO**.
+Y hacer submit
 
 ```sh
-autograder --register
+autograders --submit
 ```
 
-Tras llenar su nombre completo, correo y crear su contraseña se le enviará un correo. Haga click en el link que va en el correo (es posible que al hacer click se quede "trabado" en redirecting/redirigiendo, esto es normal, no se preocupe).
-
-Luego de hacer click en ese link, esta listo para entregar. Navegue hacia la carpeta donde tiene sus archivos, haga un ls y asegurese que le aparece el archivo `autograders.json`; si aparecio, está en el lugar correcto. Ahora puede entregar su laboratorio con...
-
 ```sh
-autograder --upload
+╭ Autograders ╮
+│             │
+│   Submit    │
+│             │
+╰─────────────╯
+
+✔ Files zipped
+✔ Submission created successfully.
+
+Assignment:
+
+╔═══════════╤══════════════════════════╗
+║ id        │ 61fcc9f510a10341e78bc4ac ║
+╟───────────┼──────────────────────────╢
+║ name      │ Lab 1 - C y GDB          ║
+╟───────────┼──────────────────────────╢
+║ createdAt │ 2022-02-04T06:38:45.587Z ║
+╟───────────┼──────────────────────────╢
+║ updatedAt │ 2022-02-04T06:38:45.587Z ║
+╚═══════════╧══════════════════════════╝
+
+...
 ```
 
-Espera un minuto aproximadamente y luego puede ver sus resultados con...
+Para ver el status de su ultimo submit:
 
 ```sh
-autograder --stats
+autograders --get-last-submit
 ```
 
-Vera desplegado sus resultados de esta manera (excepto que usted tendra 100 en lugar de 0 :P). Si dice Queued: True significa que el autograder esta un poquito ocupado y no le ha calificado, revise de nuevo en unos cinco minutos.
+Para obtener el resultado con mejor nota pueden hacer lo siguiente:
 
 ```sh
-   ___       __                        __
-  / _ |__ __/ /____  ___ ________ ____/ /__ _______
- / __ / // / __/ _ \/ _ `/ __/ _ `/ _  / -_) __(_-
-/_/ |_\_,_/\__/\___/\_, /_/  \_,_/\_,_/\__/_/ /___/
-               /___/
-
-        Command Line Interface
-           Autograders.org
-
-Get Task Stats
-
- - Queued: False
- - Grade: 0.00/100
- - Created At: 2021-01-29T12:57:05.454Z
- - Updated At: 2021-01-29T12:57:12.131Z
-
-Details:
-
-╒══════════════╤═════════╤════════════════════════════════════════╕
-│ Name         │   Grade │ Message                                │
-╞══════════════╪═════════╪════════════════════════════════════════╡
-│ 1. Eccentric │       0 │ incomplete: some answers are wrong...  │
-├──────────────┼─────────┼────────────────────────────────────────┤
-│ 2. CGDB      │       0 │ incomplete: q1,q2,q3,q4,q5,q6,q7,q8,q9 │
-├──────────────┼─────────┼────────────────────────────────────────┤
-│ 3. ll_equal  │       0 │ failed: runtime error                  │
-├──────────────┼─────────┼────────────────────────────────────────┤
-│ 4. ll_cycle  │       0 │ failed: Failed some tests...           │
-╘══════════════╧═════════╧════════════════════════════════════════╛
+autograders --get-best-submit
 ```
 
 Felicidades! Termino su lab 1. Envie el link de su repo en el GES (el GES le permite enviar links, no pegue su link en un TXT u otro documento, es incómodo).
