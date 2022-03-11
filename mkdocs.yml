@@ -61,6 +61,7 @@ nav:
       - "00: Git": labs/lab00.md
       - "01: C y GDB": labs/lab01.md
       - "02: C Avanzado": labs/lab02.md
+      - "03: RISC-V": labs/lab03.md
   - Tutoriales:
       - "Autograders": tutorials/autograders.md
       - "Máquina Virtual": tutorials/install.md

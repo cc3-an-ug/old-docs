@@ -67,7 +67,7 @@ source ~/.bashrc
 
 Después de esto, ya debería poder usar el comando `jupiter`. Si no, la vieja y confiable, reinicie su computadora.
 
-### Cosas básicas en V-Sim:
+### Cosas básicas en Jupiter:
 
 A continuación, les vamos a dar una pequeña guía de Jupiter, para más información visiten la página de documentación en [https://jupitersim.gitbook.io/jupiter/](https://jupitersim.gitbook.io/jupiter/).
 
@@ -147,7 +147,7 @@ Desde Jupiter abran el archivo **ex2.s** que está en la carpeta **ex2** y, desd
 
 En este ejercicio, tienen que implementar la función de factorial en RISC-V que toma un sólo parámetro entero **n** y retorna **n!**. Pueden encontrar un esqueleto de esta función en el archivo **factorial.s**, que se encuentra en la carpeta **ex3** del repositorio que clonaron. Ustedes sólo necesitan agregar las instrucciones bajo la etiqueta `factorial`, y el argumento que se pasa a la función va en el registro `a0`. Pueden resolver este problema ya sea de forma recursiva o iterativa. Asegúrense de que su función retorne de forma apropidada lo siguiente **3!** = **6**, **7!** = **5040** y **8!** = **40320**.
 
-## Ejercicio 4: List Map
+## Ejercicio 4: List Map (Extra)
 
 Para este ejercicio van a utilizar el archivo **list_map.s** que se encuentra en la carpeta **ex4**. En este ejercicio, van a completar una función de "map" con listas encadenadas en RISC-V. La función se simplificará en mutar la lista en cuestión, es decir que tomará una lista encadenada como entrada y va a retornar la lista con los valores modificados. Nuestro procedimiento de "map" toma dos parámetros, el primero será la dirección del nodo "head" de una lista encadenada, cuyos valores son enteros de 32 bits. Entonces, en C, la estructura se define como:
 
@@ -183,24 +183,4 @@ La primera línea es la lista original, y la segunda es la lista modificada desp
 
 ## Calificación
 
-Por favor actualizar siempre la versión del CLI de autograders:
-
-```
-pip3 install --upgrade autograders-cli
-```
-
-Como en todos los demás laboratorios, hay un autograder y este no es la excepción. El **staff** trabajo bastante para que su experiencia en este curso sea de las mejores. Entregaremos este lab de la misma manera que el pasado.
-
-Navegue hacia la carpeta donde tiene sus archivos, haga un ls y asegurese que le aparece el archivo autograders.json; si aparecio, esta en el lugar correcto. Ahora puede entregar su laboratorio con...
-
-```
-autograder --upload
-```
-
-Espera un minuto aprox. y luego puede ver sus resultados con...
-
-```
-autograder --stats
-```
-
-Si le aparece Queued: True, espere un par de minutos y luego repita el `autograder --stats` únicamente. Al terminar todo, suba el link de su repositorio al GES.
+Por favor subir el link de su repositorio al GES ! de lo contrario la calificación será de 0.
