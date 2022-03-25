@@ -62,6 +62,8 @@ nav:
       - "01: C y GDB": labs/lab01.md
       - "02: C Avanzado": labs/lab02.md
       - "03: RISC-V": labs/lab03.md
+  - Proyectos:
+      - "01: C y RISC-V": projects/pj01.md
   - Tutoriales:
       - "Autograders": tutorials/autograders.md
       - "Máquina Virtual": tutorials/install.md
